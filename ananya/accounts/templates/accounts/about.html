@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | CaptureMemo</title>
+    <link rel="stylesheet" href="{% static 'accounts/contact.css' %}">
+</head>
+<body bgcolor="#EFEAE3" style="text-align:center;font-size:40px">
+
+      <nav>
+               <img src="{% static 'accounts/Video summarizer application logo.jpg' %}"
+                    alt="" width="200px" style="border-radius:25px;float:left">
+            <div id="nav-part2">
+                <h4><a href="{%  url 'index' %}">Home</a></h4>
+                <h4><a href="{% url 'contact' %}">About<a></h4>
+                <h4><a href="{% url 'contact' %}">Contact</a></h4>
+            </div>
+           
+        </nav>
+<header class="hero">
+    <div class="hero-text">
+        <h1>Meet <span>CaptureMemo</span></h1>
+        <p>Turning hours of meetings into minutes of clarity. Automatically.</p>
+    </div>
+</header>
+
+<section class="features">
+    <h2>Why CaptureMemo?</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🕒 Saves Time</h3>
+            <p>Automatically generates summaries, so you never have to write minutes again.</p>
+        </div>
+        <div class="card">
+            <h3>📄 Actionable Notes</h3>
+            <p>Extracts highlights, key decisions, and action points from any meeting video.</p>
+        </div>
+        <div class="card">
+            <h3>🌐 Works Anywhere</h3>
+            <p>Supports uploaded recordings, online meetings, or even live discussions.</p>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

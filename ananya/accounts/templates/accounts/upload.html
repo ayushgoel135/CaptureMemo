@@ -1,0 +1,6 @@
+<form method="POST" enctype="multipart/form-data" action="{% url 'summarize' %}">
+  {% csrf_token %}
+  <label for="video">Upload MP4 Video:</label>
+  <input type="file" name="video" accept=".mp4" required>
+  <button type="submit">Summarize Meeting</button>
+</form>

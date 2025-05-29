@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Harmony</title>
+    <!DOCTYPE html>
+
+   <link rel="stylesheet" href="{% static 'accounts/contact.css' %}">
+</head>
+
+
+
+<body>
+
+
+    <div class="container">
+    <div class="" style="background-color:#EFEAE3">
+        <nav>
+            <img src="{% static 'accounts/Video summarizer application logo.jpg' %}"
+                    alt="" width="200px" style="border-radius:25px;float:left">
+            <div id="nav-part2">
+                <h4><a href="{% url 'index' %}">Home</a></h4>
+                <h4><a href="{% url 'about' %}">About</a></h4>
+                <h4><a href="{% url 'contact' %}">Contact</a></h4>
+            </div>
+           
+        </nav>
+    </div>
+        
+        <div class="center-wrapper">
+        
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" >
+            
+            <input type="hidden" name="access_key" value="39e7e479-1449-4ce4-be67-a0bddbc9ad61">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="Email" placeholder="Email id" required>
+            <input type="number" name="phone no." placeholder="phone number" required>
+            <input type="text" name="City" placeholder="Your city" required>
+            <input type="text" name="Address" placeholder="Your address" required>
+            
+            <input type="text" name="Issue" placeholder="Your issue" id="issue" required>
+                                
+                                <textarea id="message" name="message" rows="4" placeholder=" Any message"></textarea>
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                           
+                        </div>  
+                
+                    
+                    
+                    
+                </body>
+
+</html>
